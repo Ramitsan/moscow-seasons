@@ -1,0 +1,30 @@
+.page-header {
+  width: 100%;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  background-color: $color-white;
+  box-shadow: $shadow;
+}
+
+.page-header__wrapper {
+  width: 100%;
+  max-width: $header-width-desktop;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.page-header__logo {
+  width: 202px;
+  height: 46px;
+  margin-right: 370px;
+}
+
+.page-header__heart {
+  margin-top: -20px;
+}

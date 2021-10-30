@@ -1,0 +1,19 @@
+.partners-and-social {
+  background-image: url("../../img/social-green-decor.svg");
+  background-size: 548px 212px;
+  background-repeat: no-repeat;
+  background-position: right bottom -93px;
+  padding-bottom: 68px;
+}
+
+.partners-and-social__wrapper {
+  width: 100%;
+  max-width: $content-width-desktop;
+  margin: 0 auto;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}

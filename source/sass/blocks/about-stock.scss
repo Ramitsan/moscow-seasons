@@ -1,0 +1,170 @@
+.about-stock {
+  padding-bottom: 95px;
+  position: relative;
+  background-image: url("../img/foot-pink.svg"), url("../img/foot-pink.svg"), url("../img/foot-pink.svg"), url("../img/foot-pink.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 403px left 72px, bottom 573px left 172px, top 175px right 110px, top 338px right 148px;
+  background-size: 68px auto;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 725px;
+    height: 280px;
+    bottom: -118px;
+    right: 0px;
+    background-image: url("../img/about-decor-green.svg");
+    background-repeat: no-repeat;
+    background-size: 725px 280px;
+  }
+}
+
+.about-stock__wrapper {
+  width: 100%;
+  max-width: $content-width-desktop;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 219px;
+    height: 219px;
+    top: -114px;
+    left: 248px;
+    background-image: url("../img/pets2-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 219px 219px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      content: "";
+      background-image: url("../img/pets2-desktop@2x.png");
+      background-size: 219px 219px;
+    }
+  }
+}
+
+.about-stock__list {
+  list-style: none;
+  padding-left: 128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 22px;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+  }
+  &::before {
+    width: 206px;
+    height: 206px;
+    bottom: 147px;
+    left: -45px;
+    background-image: url("../img/pets4-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 206px 206px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      content: "";
+      background-image: url("../img/pets4-desktop@2x.png");
+      background-size: 206px 206px;
+    }
+  }
+  &::after {
+    width: 213px;
+    height: 213px;
+    top: 196px;
+    right: -50px;
+    background-image: url("../img/pets3-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 213px 213px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      content: "";
+      background-image: url("../img/pets3-desktop@2x.png");
+      background-size: 213px 213px;
+    }
+  }
+}
+
+.about-stock__item {
+  width: 700px;
+  margin: 37px 0;
+  position: relative;
+  font-size: 18px;
+  line-height: 28px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+  }
+}
+
+.about-stock__item--first {
+  &::before {
+    top: -14px;
+    left: -140px;
+    background-image: url("../img/stock-home.svg");
+  }
+}
+
+.about-stock__item--second {
+  &::before {
+    top: -2px;
+    left: -138px;
+    background-image: url("../img/stock-cross.svg");
+  }
+}
+
+.about-stock__item--third {
+  &::before {
+    top: -24px;
+    left: -140px;
+    background-image: url("../img/stock-message.svg");
+  }
+}
+
+.about-stock__item--fourth {
+  &::before {
+    top: -17px;
+    left: -141px;
+    background-image: url("../img/stock-bone.svg");
+  }
+}
+
+.about-stock__item--fifth {
+  &::before {
+    top: -14px;
+    left: -139px;
+    background-image: url("../img/stock-scissors.svg");
+  }
+}
+
+.about-stock__sign-up {
+  display: inline-block;
+  padding: 25px 50px 25px 46px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: $color-white;
+  background-color: #f07d10;
+  border-radius: 64px;
+  background-image: url("../img/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: 16px auto;
+  background-position: center right 22px;
+  transition: all 0.2s;
+  &:focus,
+  &:hover {
+    background-color: $link-color;
+  }
+  &:active {
+    opacity: 0.5;
+  }
+}

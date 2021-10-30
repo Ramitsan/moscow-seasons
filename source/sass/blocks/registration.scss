@@ -1,0 +1,105 @@
+.registration {
+  padding-top: 50px;
+  padding-bottom: 12px;
+  position: relative;
+  background-image: url("../img/foot-yellow.svg"), url("../img/foot-yellow.svg"), url("../img/foot-blue.svg"), url("../img/foot-blue.svg");
+  background-repeat: no-repeat;
+  background-position: left 89px top 83px, left 273px top 176px, right 236px top 219px, right 92px top 325px;
+  background-size: 68px auto;
+}
+
+.registration__blue-block {
+  width: 30%;
+  height: 514px;
+  background-color: $secondary-color;
+  position: absolute;
+  top: 365px;
+}
+
+.registration__wrapper {
+  width: 100%;
+  max-width: $content-width-desktop;
+  margin: 0 auto;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.registration__text {
+  width: 562px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.registration__content {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 55px;
+  padding-bottom: 140px;
+  padding-left: 33px;
+}
+
+.registration__picture {
+  margin-right: 24px;
+  width: 600px;
+  height: 600px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 243px;
+    height: 243px;
+    top: -60px;
+    left: 32px;
+    background-image: url("../img/pets5-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 243px 243px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      content: "";
+      background-image: url("../img/pets5-desktop@2x.png");
+      background-size: 243px 243px;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 498px;
+    height: 248px;
+    bottom: -83px;
+    left: -119px;
+    background-image: url("../img/registration-red-decor.svg");
+    background-repeat: no-repeat;
+    background-size: 498px 248px;
+  }
+}
+
+.registration__img {
+  display: block;
+}
+
+.registration__form {
+  width: 630px;
+  height: 665px;
+  background-color: #f2f9f6;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registration__form-text {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #3f9a74;
+  opacity: 0.2;
+}

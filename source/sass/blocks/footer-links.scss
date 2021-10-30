@@ -1,0 +1,65 @@
+.footer-links__list {
+  list-style: none;
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+
+.footer-links__item {
+  position: relative;
+  padding-left: 76px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 22px;
+    background-repeat: no-repeat;
+  }
+}
+
+.footer-links__item--events {
+  &::before {
+    width: 52px;
+    height: 36px;
+    background-image: url("../../img/icon-events.png");
+    background-size: 52px 36px;
+  }
+}
+
+.footer-links__item--charity {
+  &::before {
+    width: 41px;
+    height: 37px;
+    background-image: url("../../img/icon-charity.png");
+    background-size: 41px 37px;
+  }
+}
+
+.footer-links__item--guide {
+  &::before {
+    width: 49px;
+    height: 43px;
+    background-image: url("../../img/icon-guide.png");
+    background-size: 49px 43px;
+  }
+}
+
+.footer-links__item:not(:first-child) {
+  margin-top: 41px;
+}
+
+.footer-links__item:not(:last-child) {
+  margin-bottom: 41px;
+}
+
+.footer-links__link {
+  color: $color-white;
+  text-transform: uppercase;
+  font-size: 14px;
+  &:focus,
+  &:hover {
+    color: $primary-color;
+  }
+  &:active {
+    opacity: .7;
+  }
+}

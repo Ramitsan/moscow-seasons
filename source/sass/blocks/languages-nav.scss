@@ -1,0 +1,28 @@
+.languages-nav {
+  display: flex;
+  flex-direction: row;
+  margin-top: -20px;
+}
+
+.languages-nav__link {
+  display: inline-block;
+  color: $link-color;
+  margin-left: 10px;
+
+  &:focus,
+  &:hover {
+    color: $primary-color;
+  }
+  &:active {
+    opacity: 0.5;
+  }
+  &--active {
+    color: $main-text-color;
+    &:focus,
+    &:hover,
+    &:active {
+      color: $main-text-color;
+      opacity: 1;
+    }
+  }
+}

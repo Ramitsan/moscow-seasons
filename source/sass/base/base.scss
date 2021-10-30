@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  min-width: 320px;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $color-white;
+  font-family: $font-golos;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  color: $main-text-color;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section-title {
+  @include second-level-headings();
+}
+
+.btn {
+  border: 1px solid transparent;
+  vertical-align: middle;
+}

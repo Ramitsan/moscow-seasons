@@ -1,0 +1,27 @@
+.footer-nav__list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.footer-nav__item:not(:first-child) {
+  margin-top: 16px;
+}
+
+.footer-nav__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.footer-nav__link {
+  color: $color-white;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  &:focus,
+  &:hover {
+    color: $primary-color;
+  }
+  &:active {
+    opacity: .7;
+  }
+}
