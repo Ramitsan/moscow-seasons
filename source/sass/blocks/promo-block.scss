@@ -28,7 +28,7 @@
       background-size: 752px 254px;
     }
   }
-  
+
   .promo-block__wrapper {
     width: 100%;
     margin: 0 auto;
@@ -55,7 +55,7 @@
       background-size: 160px 160px;
     }
   }
-  
+
   .promo-block__info {
     color: $color-white;
     margin-right: 97px;
@@ -64,7 +64,7 @@
     background-color: $secondary-color;
     border-radius: 0 275px 275px 0;
   }
-  
+
   .promo-block__stock {
     width: 446px;
     position: relative;
@@ -85,14 +85,14 @@
       }
     }
   }
-  
+
   .promo-block__stock span {
     display: inline-block;
     font-size: 24px;
     line-height: 32px;
     margin-bottom: 14px;
   }
-  
+
   .promo-block__title {
     width: 420px;
     font-weight: bold;
@@ -105,25 +105,25 @@
     border-radius: 0 64px 64px 0;
     text-align: center;
   }
-  
+
   .promo-block__text {
     font-size: 18px;
     line-height: 28px;
     color: $color-white;
     margin-bottom: 54px;
   }
-  
+
   .promo-block__location {
     margin-bottom: 36px;
   }
-  
+
   .promo-block__date {
     font-weight: bold;
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 10px;
   }
-  
+
   .promo-block__time,
   .promo-block__address {
     padding-left: 30px;
@@ -139,20 +139,20 @@
       background-size: 24px 24px;
     }
   }
-  
+
   .promo-block__time {
     margin-bottom: 10px;
     &::before {
-      background-image: url("../../img/icon-calendar.svg");
+      background-image: url("../img/icon-calendar.svg");
     }
   }
-  
+
   .promo-block__address {
     &::before {
-      background-image: url("../../img/icon-location.svg");
+      background-image: url("../img/icon-location.svg");
     }
   }
-  
+
   .promo-block__picture {
     width: 600px;
     height: 600px;
@@ -179,7 +179,7 @@
       z-index: 99;
     }
   }
-  
+
   .promo-block__img {
     display: block;
   }

@@ -3,8 +3,7 @@
   font-style: normal;
   font-weight: normal;
   font-display: swap;
-  src: url("../../fonts/Golostextregular.woff2") format("woff2"),
-    url("../../fonts/Golostextregular.woff") format("woff");
+  src: url("../fonts/Golostextregular.woff2") format("woff2"), url("../fonts/Golostextregular.woff") format("woff");
 }
 
 @font-face {
@@ -12,5 +11,5 @@
   font-style: normal;
   font-weight: bold;
   font-display: swap;
-  src: url("../../fonts/Golostextbold.woff2") format("woff2"), url("../../fonts/Golostextbold.woff") format("woff");
+  src: url("../fonts/Golostextbold.woff2") format("woff2"), url("../fonts/Golostextbold.woff") format("woff");
 }
