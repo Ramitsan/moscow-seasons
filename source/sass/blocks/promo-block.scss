@@ -1,185 +1,243 @@
-  .promo-block {
-    background-image: url("../img/header-big-circle.svg");
+.promo-block {
+  background-image: url("../img/header-big-circle.svg"), url("../../img/header-rectangle-blue.svg");
+  background-repeat: no-repeat;
+  background-position: right -187px top -299px, left top 50px;
+  background-size: 47% auto, 49% auto;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 542px;
+    height: 156px;
+    bottom: 88px;
+    left: -95px;
+    background-image: url("../img/header-green-decor.svg");
     background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 608px auto;
-    position: relative;
-    &::before {
+    background-size: 542px 156px;
+    z-index: 100;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 752px;
+    height: 254px;
+    bottom: 68px;
+    right: -60px;
+    background-image: url("../img/header-yellow-decor.svg");
+    background-repeat: no-repeat;
+    background-size: 752px 254px;
+  }
+}
+
+.promo-block__wrapper {
+  width: 1364px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 26px;
+  padding-bottom: 140px;
+  position: relative;
+  background-image: url("../img/foot-pink.svg"), url("../img/foot-pink.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 40px right 634px, top 15px left 760px;
+  background-size: 86px auto, 68px auto;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: -32px;
+    left: -210px;
+    background-image: url("../img/header-red-circle.svg");
+    background-repeat: no-repeat;
+    background-size: 160px 160px;
+  }
+}
+
+.promo-block__info {
+  color: $color-white;
+  margin-top: 26px;
+  margin-right: 95px;
+  padding: 68px 190px 50px 32px;
+  border-radius: 0 275px 275px 0;
+}
+
+.promo-block__stock {
+  width: 446px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 214px;
+    height: 214px;
+    top: -116px;
+    left: 432px;
+    background-image: url("../img/pets1-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: 214px 214px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       content: "";
-      position: absolute;
-      width: 542px;
-      height: 156px;
-      bottom: 88px;
-      left: 0px;
-      background-image: url("../img/header-green-decor.svg");
-      background-repeat: no-repeat;
-      background-size: 542px 156px;
-      z-index: 100;
+      background-image: url("../img/pets1-desktop@2x.png");
+      background-size: 214px 214px;
+    }
+  }
+}
+
+.promo-block__stock span {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 14px;
+}
+
+.promo-block__title {
+  width: 420px;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 48px;
+  color: $secondary-color;
+  background-color: $color-white;
+  margin: 0;
+  padding: 20px 20px 26px 30px;
+  border-radius: 0 64px 64px 0;
+  text-align: center;
+}
+
+.promo-block__text {
+  font-size: 18px;
+  line-height: 28px;
+  color: $color-white;
+  margin-bottom: 54px;
+}
+
+.promo-block__location {
+  margin-bottom: 36px;
+}
+
+.promo-block__date {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+
+.promo-block__time,
+.promo-block__address {
+  padding-left: 30px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: -4px;
+    left: 0px;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+  }
+}
+
+.promo-block__time {
+  margin-bottom: 10px;
+  &::before {
+    background-image: url("../img/icon-calendar.svg");
+  }
+}
+
+.promo-block__address {
+  &::before {
+    background-image: url("../img/icon-location.svg");
+  }
+}
+
+.promo-block__picture {
+  width: 600px;
+  height: 602px;
+  position: relative;
+  &::before {
+    content: "Счастье стать другом!";
+    position: absolute;
+    top: 146px;
+    left: 17px;
+    font-weight: bold;
+    font-size: 18px;
+    color: $color-white;
+    z-index: 100;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 245px;
+    height: 39px;
+    top: 139px;
+    left: -8px;
+    background-color: $link-color;
+    border-radius: 32px;
+    z-index: 99;
+  }
+}
+
+.promo-block__img {
+  display: block;
+  width: 600px;
+  height: auto;
+}
+
+@media (max-width: $small-desktop-width) {
+  .promo-block {
+    background-position: right -314px top -282px, left -176px top 50px;
+    background-size: 55% auto, 60% auto;
+    &::before {
+      left: -260px;
     }
     &::after {
-      content: "";
-      position: absolute;
-      width: 752px;
-      height: 254px;
-      bottom: 68px;
-      right: 0px;
-      background-image: url("../img/header-yellow-decor.svg");
-      background-repeat: no-repeat;
-      background-size: 752px 254px;
+      right: -218px;
     }
   }
-
   .promo-block__wrapper {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-top: 26px;
-    padding-bottom: 140px;
-    position: relative;
-    background-image: url("../img/foot-pink.svg"), url("../img/foot-pink.svg");
-    background-repeat: no-repeat;
-    background-position: bottom 40px right 634px, top 15px left 1031px;
-    background-size: 86px auto, 68px auto;
+    width: 1360px;
+    padding-left: 50px;
+    background-position: bottom 44px right 366px, top 14px left 752px;
     &::before {
-      content: "";
-      position: absolute;
-      width: 160px;
-      height: 160px;
-      top: -38px;
-      left: 60px;
-      background-image: url("../img/header-red-circle.svg");
-      background-repeat: no-repeat;
-      background-size: 160px 160px;
+      left: -216px;
     }
   }
-
-  .promo-block__info {
-    color: $color-white;
-    margin-right: 97px;
-    margin-top: 26px;
-    padding: 68px 190px 50px 16%;
-    background-color: $secondary-color;
-    border-radius: 0 275px 275px 0;
+  .promo-block__title {
+    padding: 20px 20px 22px 30px;
   }
-
   .promo-block__stock {
-    width: 446px;
-    position: relative;
     &::before {
-      content: "";
-      position: absolute;
-      width: 214px;
-      height: 214px;
-      top: -116px;
-      left: 432px;
-      background-image: url("../img/pets1-desktop@1x.png");
-      background-repeat: no-repeat;
-      background-size: 214px 214px;
+      width: 311px;
+      height: 311px;
+      top: -170px;
+      left: 309px;
+      background-image: url('../../img/pets1-small-desktop@1x.png');
+      background-size: 311px 311px;
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        content: "";
-        background-image: url("../img/pets1-desktop@2x.png");
-        background-size: 214px 214px;
+        background-image: url("../../img/pets1-small-desktop@2x.png");
+        background-size: 311px 311px;
       }
     }
   }
-
-  .promo-block__stock span {
-    display: inline-block;
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 14px;
+  .promo-block__info {
+    margin-right: 25px;
+    padding: 68px 190px 50px 50px;
   }
-
-  .promo-block__title {
-    width: 420px;
-    font-weight: bold;
-    font-size: 46px;
-    line-height: 48px;
-    color: $secondary-color;
-    background-color: $color-white;
-    margin: 0;
-    padding: 20px 20px 26px 30px;
-    border-radius: 0 64px 64px 0;
-    text-align: center;
-  }
-
-  .promo-block__text {
-    font-size: 18px;
-    line-height: 28px;
-    color: $color-white;
-    margin-bottom: 54px;
-  }
-
-  .promo-block__location {
-    margin-bottom: 36px;
-  }
-
-  .promo-block__date {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 36px;
-    margin-bottom: 10px;
-  }
-
-  .promo-block__time,
-  .promo-block__address {
-    padding-left: 30px;
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      width: 24px;
-      height: 24px;
-      top: -4px;
-      left: 0px;
-      background-repeat: no-repeat;
-      background-size: 24px 24px;
-    }
-  }
-
-  .promo-block__time {
-    margin-bottom: 10px;
-    &::before {
-      background-image: url("../img/icon-calendar.svg");
-    }
-  }
-
-  .promo-block__address {
-    &::before {
-      background-image: url("../img/icon-location.svg");
-    }
-  }
-
   .promo-block__picture {
-    width: 600px;
+    width: 630px;
     height: 600px;
-    position: relative;
-    &::before {
-      content: "Счастье стать другом!";
-      position: absolute;
-      top: 146px;
-      left: 17px;
-      font-weight: bold;
-      font-size: 18px;
-      color: $color-white;
-      z-index: 100;
-    }
     &::after {
-      content: "";
-      position: absolute;
-      width: 245px;
-      height: 39px;
-      top: 139px;
-      left: -8px;
-      background-color: $link-color;
-      border-radius: 32px;
-      z-index: 99;
+      top: 135px;
+    }
+    &::before {
+      top: 140px;
     }
   }
-
   .promo-block__img {
-    display: block;
+    width: 630px;
+    height: auto;
   }
+}
