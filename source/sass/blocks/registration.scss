@@ -103,3 +103,9 @@
   color: #3f9a74;
   opacity: 0.2;
 }
+
+@media (max-width: $small-desktop-width) {
+  .registration {
+    background-position: left 23px top 93px, left 200px top 192px, right 150px top 219px, right 6px top 325px;
+  }
+}

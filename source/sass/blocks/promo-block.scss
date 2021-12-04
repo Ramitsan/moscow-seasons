@@ -1,5 +1,5 @@
 .promo-block {
-  background-image: url("../img/header-big-circle.svg"), url("../../img/header-rectangle-blue.svg");
+  background-image: url("../img/header-big-circle.svg"), url("../img/header-rectangle-blue.svg");
   background-repeat: no-repeat;
   background-position: right -187px top -299px, left top 50px;
   background-size: 47% auto, 49% auto;
@@ -214,10 +214,10 @@
       height: 311px;
       top: -170px;
       left: 309px;
-      background-image: url('../../img/pets1-small-desktop@1x.png');
+      background-image: url('../img/pets1-small-desktop@1x.png');
       background-size: 311px 311px;
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../../img/pets1-small-desktop@2x.png");
+        background-image: url("../img/pets1-small-desktop@2x.png");
         background-size: 311px 311px;
       }
     }

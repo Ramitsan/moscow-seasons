@@ -143,3 +143,9 @@ picture {
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: $small-desktop-width) {
+  .gallery__wrapper {
+    margin-left: 142px;
+  }
+}

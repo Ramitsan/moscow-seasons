@@ -4,17 +4,17 @@
   background-image: url("../img/foot-pink.svg"), url("../img/foot-pink.svg"), url("../img/foot-pink.svg"), url("../img/foot-pink.svg");
   background-repeat: no-repeat;
   background-position: bottom 403px left 72px, bottom 573px left 172px, top 175px right 110px, top 338px right 148px;
-  background-size: 68px auto;
+  background-size: 68px auto, 68px auto, 68px auto, 68px auto;
   &::after {
     content: "";
     position: absolute;
-    width: 725px;
-    height: 280px;
+    width: 414px;
+    height: 282px;
     bottom: -118px;
     right: 0px;
     background-image: url("../img/about-decor-green.svg");
     background-repeat: no-repeat;
-    background-size: 725px 280px;
+    background-size: 414px 282px;
   }
 }
 
@@ -166,5 +166,17 @@
   }
   &:active {
     opacity: 0.5;
+  }
+}
+
+@media (max-width: $small-desktop-width) {
+  .about-stock {
+    background-position: bottom 402px left 7px, bottom 566px left 103px, top 173px right 24px, top 338px right 56px;
+  }
+  .about-stock__list {
+    margin-bottom: 30px;
+  }
+  .about-stock__item {
+    margin: 36px 0;
   }
 }

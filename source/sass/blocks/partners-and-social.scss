@@ -17,3 +17,9 @@
   align-items: center;
   position: relative;
 }
+
+@media (max-width: $small-desktop-width) {
+  .partners-and-social {
+    background-position: right -189px bottom -93px;
+  }
+}
