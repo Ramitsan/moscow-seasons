@@ -1,3 +1,8 @@
+## Deploy: 
+https://ramitsan.github.io/moscow-seasons-test-gitlab/
+
+![333](https://user-images.githubusercontent.com/45296707/197884095-50036886-a0d5-43a4-b44e-dc7f0a84bb2b.jpg)
+
 ## Краткая инструкция по работе
 ### Для начала работы у вас должен быть установлен:
 * Node.js v.10.15.3
