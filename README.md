@@ -1,7 +1,11 @@
 ## Deploy: 
-https://ramitsan.github.io/moscow-seasons-test-gitlab/
+https://ramitsan.github.io/moscow-seasons/
 
-![333](https://user-images.githubusercontent.com/45296707/197884095-50036886-a0d5-43a4-b44e-dc7f0a84bb2b.jpg)
+Лендинг благотворительной акции для животных. 
+
+![moscow-seasons](https://github.com/Ramitsan/moscow-seasons/assets/45296707/957c9cd9-9606-4703-a2f0-4d8a47682939)
+
+#### В проекте использованы технологии и инструменты: HTML, SCSS, GULP, БЭМ
 
 ## Краткая инструкция по работе
 ### Для начала работы у вас должен быть установлен:
