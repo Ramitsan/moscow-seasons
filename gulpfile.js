@@ -1,3 +1,6 @@
+const ghPages = require('gh-pages');
+const path = require('path');
+
 const gulp = require("gulp");
 const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
@@ -107,3 +110,8 @@ gulp.task("css", function () {
   
   gulp.task("build", gulp.series("clean", "copy", "js", "css", "sprite", "html"));
   gulp.task("start", gulp.series("build", "server"));
+
+  function deploy(cb) {
+    ghPages.publish(path.join(process.cwd(), './build'), cb);
+  }
+  exports.deploy = deploy;
